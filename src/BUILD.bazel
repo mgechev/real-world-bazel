@@ -36,6 +36,10 @@ ng_module(
         "@npm//@angular/forms",
         "@npm//@types",
         "@npm//marked",
+        "//src/app/article",
+        "//src/app/editor",
+        "//src/app/profile",
+        "//src/app/settings",
     ],
 )
 
