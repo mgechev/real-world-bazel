@@ -95,23 +95,9 @@ filegroup(
 
 ts_devserver(
     name = "devserver",
-    port = 4200,
+    port = 4201,
     entry_module = "project/src/main.dev",
-    serving_path = "/bundle.min.js",
-    scripts = [
-        ":rxjs_umd_modules",
-        "@npm//node_modules/@angular/animations:bundles/animations.umd.js",
-        "@npm//node_modules/@angular/animations:bundles/animations-browser.umd.js",
-        "@npm//node_modules/@angular/core:bundles/core.umd.js",
-        "@npm//node_modules/@angular/common:bundles/common.umd.js",
-        "@npm//node_modules/@angular/common:bundles/common-http.umd.js",
-        "@npm//node_modules/@angular/router:bundles/router.umd.js",
-        "@npm//node_modules/@angular/router:router.ngfactory.js",
-        "@npm//node_modules/@angular/forms:bundles/forms.umd.js",
-        "@npm//node_modules/@angular/platform-browser:bundles/platform-browser.umd.js",
-        "@npm//node_modules/@angular/platform-browser:bundles/platform-browser-animations.umd.js",
-        "@npm//node_modules/tslib:tslib.js",
-    ],
+    scripts = [],
     static_files = [
         "@npm//node_modules/zone.js:dist/zone.min.js",
     ],
@@ -119,7 +105,21 @@ ts_devserver(
         "favicon.ico",
     ],
     index_html = "index.html",
-    deps = [":src"],
+    deps = [
+        "@npm//node_modules/tslib:tslib.js",
+        "@npm//node_modules/@angular/core:bundles/core.umd.js",
+        "@npm//node_modules/@angular/common:bundles/common.umd.js",
+        "@npm//node_modules/@angular/common:bundles/common-http.umd.js",
+        "@npm//node_modules/@angular/router:bundles/router.umd.js",
+        "@npm//node_modules/@angular/forms:bundles/forms.umd.js",
+        "@npm//node_modules/@angular/animations:bundles/animations.umd.js",
+        "@npm//node_modules/@angular/animations:bundles/animations-browser.umd.js",
+        "@npm//node_modules/@angular/router:router.ngfactory.js",
+        "@npm//node_modules/@angular/platform-browser:bundles/platform-browser.umd.js",
+        "@npm//node_modules/@angular/platform-browser:bundles/platform-browser-animations.umd.js",
+        ":rxjs_umd_modules",
+        "//src",
+    ],
 )
 
 ts_library(
