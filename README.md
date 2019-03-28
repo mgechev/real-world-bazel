@@ -2,6 +2,8 @@
 
 > ### Angular codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API. The application is built using **Bazel**.
 
+*The testing part is under development*.
+
 This codebase was created to demonstrate a fully fledged application built with Angular that interacts with an actual backend server including CRUD operations, authentication, routing, pagination, and more. We've gone to great lengths to adhere to the [Angular Styleguide](https://angular.io/styleguide) & best practices. The application is **using Bazel** as its build system.
 
 ### Making requests to the backend API
