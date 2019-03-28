@@ -4,19 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'settings',
-    loadChildren: './settings/settings.module#SettingsModule'
+    loadChildren: 'app/settings/settings.module#SettingsModule'
   },
   {
     path: 'profile',
-    loadChildren: './profile/profile.module#ProfileModule'
+    loadChildren: 'app/profile/profile.module#ProfileModule'
   },
   {
     path: 'editor',
-    loadChildren: './editor/editor.module#EditorModule'
+    loadChildren: 'app/editor/editor.module#EditorModule'
   },
   {
     path: 'article',
-    loadChildren: './article/article.module#ArticleModule'
+    loadChildren: 'app/article/article.module#ArticleModule'
   }
 ];
 

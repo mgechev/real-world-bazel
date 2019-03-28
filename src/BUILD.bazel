@@ -56,7 +56,7 @@ rollup_bundle(
         "@npm//@angular/common",
         "@npm//@angular/forms",
         "@npm//marked",
-        "@npm//rxjs",
+        "@npm//rxjs"
     ],
 )
 
