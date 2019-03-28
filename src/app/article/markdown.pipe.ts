@@ -1,10 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import * as marked from 'marked';
+import * as marked_ from 'marked';
+
+const marked = marked_;
 
 @Pipe({name: 'markdown'})
 export class MarkdownPipe implements PipeTransform {
   transform(content: string): string {
-    return '';
-    // return marked(content, { sanitize: true });
+    return marked(content, { sanitize: true });
   }
 }

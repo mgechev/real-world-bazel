@@ -107,9 +107,11 @@ ts_devserver(
     ],
     data = [
         "favicon.ico",
+        "@npm//node_modules/marked:marked.min.js",
     ],
     index_html = "index.html",
     deps = [
+        ":require.config.js",
         "@npm//node_modules/tslib:tslib.js",
         "@npm//node_modules/@angular/core:bundles/core.umd.js",
         "@npm//node_modules/@angular/common:bundles/common.umd.js",
