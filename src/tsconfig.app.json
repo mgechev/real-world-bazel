@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "types": [],
+    "sourceMap": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2015", "es2017", "dom"],
+    "rootDirs": [
+      ".",
+      "../dist/bin/src"
+    ]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
